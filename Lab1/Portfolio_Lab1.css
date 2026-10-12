@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(150, 27, 27) 200px, white 200px);
+}
+.header {
+    position: relative;
+    height: 200px;
+    padding-top: 30px;
+}
+
+.profile-img {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.name {
+    text-align: center;
+    margin: 0;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    padding-top: 8px;
+    color: rgb(178, 172, 172);
+    font-size: 16px;
+}
+
+.faculty {
+    text-align: center;
+    margin: 0;
+    padding-top: 8px;
+    color: rgb(209, 206, 206);
+    font-size: 14px;
+}
+
+.projects-section {
+    margin-top: 60px;
+    padding: 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    color: black;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.project-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-top: 4px solid rgb(150, 27, 27); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h3 {
+    margin-top: 0;
+    color: rgb(150, 27, 27);
+    font-size: 20px;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+
+.contact-title {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-item {
+    color: rgb(16, 9, 9);
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.contact-item:first-of-type {
+    margin-top: 20px;
+}
+
+.label {
+    font-weight: bold;
+    color: rgb(150, 27, 27);
+}
+.contact-link {
+    color: rgb(150, 27, 27);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: #b30000;
+}
